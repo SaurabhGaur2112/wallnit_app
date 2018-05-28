@@ -1,0 +1,755 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_interest_vertical_margin"
+    android:paddingLeft="@dimen/activity_interest_horozontal_margin"
+    android:paddingRight="@dimen/activity_interest_horozontal_margin"
+    android:paddingTop="@dimen/activity_interest_vertical_margin"
+    android:background="@color/backgroundColorDefault"
+    tools:context="com.wallnit.wallnitlogin.WallnitUserChooseInterest">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/interest_setheader_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#99000000"
+        android:padding="10dp"
+        >
+
+        <TextView
+            android:id="@+id/interest_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/interest_title"
+            style="@style/interest_title"
+            />
+
+        <TextView
+            android:id="@+id/interest_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/interest_desc"
+            style="@style/interest_desc"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/interest_layout_first"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/interest_setheader_desc"
+        >
+
+        <ImageView
+            android:id="@+id/interest_movies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/movies"
+            style="@style/interest_image_right"
+            />
+
+        <ImageView
+            android:id="@+id/interest_movies_select"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/select_movies"
+            style="@style/interest_image_right"
+            android:visibility="gone"
+            />
+
+        <ImageView
+            android:id="@+id/interest_actors"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/actors"
+            style="@style/interest_image_left"
+            />
+
+        <ImageView
+            android:id="@+id/interest_actors_select"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/select_actors"
+            style="@style/interest_image_left"
+            android:visibility="gone"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/interest_layout_second"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/interest_layout_first"
+        >
+
+        <ImageView
+            android:id="@+id/interest_artists"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/artists"
+            style="@style/interest_image_right"
+            />
+
+        <ImageView
+            android:id="@+id/interest_artists_select"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/select_artists"
+            style="@style/interest_image_right"
+            android:visibility="gone"
+            />
+
+        <ImageView
+            android:id="@+id/interest_music"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/music"
+            style="@style/interest_image_left"
+            />
+
+        <ImageView
+            android:id="@+id/interest_music_select"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/select_music"
+            style="@style/interest_image_left"
+            android:visibility="gone"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/interest_layout_third"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/interest_layout_second"
+        >
+
+        <ImageView
+            android:id="@+id/interest_literature"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/literature"
+            style="@style/interest_image_right"
+            />
+
+        <ImageView
+            android:id="@+id/interest_literature_select"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/select_literature"
+            style="@style/interest_image_right"
+            android:visibility="gone"
+            />
+
+        <ImageView
+            android:id="@+id/interest_dance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dance"
+            style="@style/interest_image_left"
+            />
+
+        <ImageView
+            android:id="@+id/interest_dance_select"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/select_dance"
+            style="@style/interest_image_left"
+            android:visibility="gone"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/interest_layout_fourth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/interest_layout_third"
+        >
+
+        <ImageView
+            android:id="@+id/interest_tv_episodes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/tv_episodes"
+            style="@style/interest_image_right"
+            />
+
+        <ImageView
+            android:id="@+id/interest_tv_episodes_select"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/select_tv_episodes"
+            style="@style/interest_image_right"
+            android:visibility="gone"
+            />
+
+        <ImageView
+            android:id="@+id/interest_humor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/humor"
+            style="@style/interest_image_left"
+            />
+
+        <ImageView
+            android:id="@+id/interest_humor_select"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/select_humor"
+            style="@style/interest_image_left"
+            android:visibility="gone"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/interest_layout_fifth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/interest_layout_fourth"
+        >
+
+        <ImageView
+            android:id="@+id/interest_art"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/art"
+            style="@style/interest_image_right"
+            />
+
+        <ImageView
+            android:id="@+id/interest_art_select"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/select_art"
+            style="@style/interest_image_right"
+            android:visibility="gone"
+            />
+
+        <ImageView
+            android:id="@+id/interest_comics"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/comics"
+            style="@style/interest_image_left"
+            />
+
+        <ImageView
+            android:id="@+id/interest_comics_select"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/select_comics"
+            style="@style/interest_image_left"
+            android:visibility="gone"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/interest_layout_sixth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/interest_layout_fifth"
+        >
+
+        <ImageView
+            android:id="@+id/interest_yoga"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/yoga"
+            style="@style/interest_image_right"
+            />
+
+        <ImageView
+            android:id="@+id/interest_yoga_select"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/select_yoga"
+            style="@style/interest_image_right"
+            android:visibility="gone"
+            />
+
+        <ImageView
+            android:id="@+id/interest_exercise"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/exercise"
+            style="@style/interest_image_left"
+            />
+
+        <ImageView
+            android:id="@+id/interest_exercise_select"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/select_exercise"
+            style="@style/interest_image_left"
+            android:visibility="gone"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/interest_layout_seventh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/interest_layout_sixth"
+        >
+
+        <ImageView
+            android:id="@+id/interest_sports"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/sports"
+            style="@style/interest_image_right"
+            />
+
+        <ImageView
+            android:id="@+id/interest_sports_select"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/select_sports"
+            style="@style/interest_image_right"
+            android:visibility="gone"
+            />
+
+        <ImageView
+            android:id="@+id/interest_history"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/history"
+            style="@style/interest_image_left"
+            />
+
+        <ImageView
+            android:id="@+id/interest_history_select"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/select_history"
+            style="@style/interest_image_left"
+            android:visibility="gone"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/interest_layout_eighth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/interest_layout_seventh"
+        >
+
+        <ImageView
+            android:id="@+id/interest_magazines"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/magazines"
+            style="@style/interest_image_right"
+            />
+
+        <ImageView
+            android:id="@+id/interest_magazines_select"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/select_magazines"
+            style="@style/interest_image_right"
+            android:visibility="gone"
+            />
+
+        <ImageView
+            android:id="@+id/interest_news"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/news"
+            style="@style/interest_image_left"
+            />
+
+        <ImageView
+            android:id="@+id/interest_news_select"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/select_news"
+            style="@style/interest_image_left"
+            android:visibility="gone"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/interest_layout_ninth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/interest_layout_eighth"
+        >
+
+        <ImageView
+            android:id="@+id/interest_education"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/education"
+            style="@style/interest_image_right"
+            />
+
+        <ImageView
+            android:id="@+id/interest_education_select"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/select_education"
+            style="@style/interest_image_right"
+            android:visibility="gone"
+            />
+
+        <ImageView
+            android:id="@+id/interest_science"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/science"
+            style="@style/interest_image_left"
+            />
+
+        <ImageView
+            android:id="@+id/interest_science_select"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/select_science"
+            style="@style/interest_image_left"
+            android:visibility="gone"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/interest_layout_tenth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/interest_layout_ninth"
+        >
+
+        <ImageView
+            android:id="@+id/interest_technology"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/technology"
+            style="@style/interest_image_right"
+            />
+
+        <ImageView
+            android:id="@+id/interest_technology_select"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/select_technology"
+            style="@style/interest_image_right"
+            android:visibility="gone"
+            />
+
+        <ImageView
+            android:id="@+id/interest_startup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/startup"
+            style="@style/interest_image_left"
+            />
+
+        <ImageView
+            android:id="@+id/interest_startup_select"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/select_startup"
+            style="@style/interest_image_left"
+            android:visibility="gone"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/interest_layout_eleventh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/interest_layout_tenth"
+        >
+
+        <ImageView
+            android:id="@+id/interest_entrepreneur"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/entrepreneur"
+            style="@style/interest_image_right"
+            />
+
+        <ImageView
+            android:id="@+id/interest_entrepreneur_select"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/select_entrepreneur"
+            style="@style/interest_image_right"
+            android:visibility="gone"
+            />
+
+        <ImageView
+            android:id="@+id/interest_fashion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/fashion"
+            style="@style/interest_image_left"
+            />
+
+        <ImageView
+            android:id="@+id/interest_fashion_select"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/select_fashion"
+            style="@style/interest_image_left"
+            android:visibility="gone"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/interest_layout_twelth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/interest_layout_eleventh"
+        >
+
+        <ImageView
+            android:id="@+id/interest_travel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/travel"
+            style="@style/interest_image_right"
+            />
+
+        <ImageView
+            android:id="@+id/interest_travel_select"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/select_travel"
+            style="@style/interest_image_right"
+            android:visibility="gone"
+            />
+
+        <ImageView
+            android:id="@+id/interest_culture"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/culture"
+            style="@style/interest_image_left"
+            />
+
+        <ImageView
+            android:id="@+id/interest_culture_select"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/select_culture"
+            style="@style/interest_image_left"
+            android:visibility="gone"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/interest_layout_thirteen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/interest_layout_twelth"
+        >
+
+        <ImageView
+            android:id="@+id/interest_photography"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/photography"
+            style="@style/interest_image_right"
+            />
+
+        <ImageView
+            android:id="@+id/interest_photography_select"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/select_photography"
+            style="@style/interest_image_right"
+            android:visibility="gone"
+            />
+    </LinearLayout>
+
+
+            <Button
+                android:id="@+id/interest_next_option"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/interest_layout_thirteen"
+                android:text="@string/nexttxt"
+                />
+
+            <LinearLayout
+                android:id="@+id/interest_layout_fourteen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@id/interest_layout_thirteen"
+                android:visibility="gone"
+                >
+
+                <EditText
+                    android:id="@+id/edittext_first"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+                <EditText
+                    android:id="@+id/edittext_second"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+                <EditText
+                    android:id="@+id/edittext_third"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+                <EditText
+                    android:id="@+id/edittext_fourth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+                <EditText
+                    android:id="@+id/edittext_fifth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+                <EditText
+                    android:id="@+id/edittext_sixth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+                <EditText
+                    android:id="@+id/edittext_seventh"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+                <EditText
+                    android:id="@+id/edittext_eighth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+                <EditText
+                    android:id="@+id/edittext_ninth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+                <EditText
+                    android:id="@+id/edittext_tenth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+                <EditText
+                    android:id="@+id/edittext_eleventh"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+                <EditText
+                    android:id="@+id/edittext_twelth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+                <EditText
+                    android:id="@+id/edittext_thirteen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+                <EditText
+                    android:id="@+id/edittext_fourteen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+                <EditText
+                    android:id="@+id/edittext_fifteen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+                <EditText
+                    android:id="@+id/edittext_sixteen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+                <EditText
+                    android:id="@+id/edittext_seventeen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+                <EditText
+                    android:id="@+id/edittext_eighteen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+                <EditText
+                    android:id="@+id/edittext_ninteen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+                <EditText
+                    android:id="@+id/edittext_twenty"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+                <EditText
+                    android:id="@+id/edittext_twentyone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+                <EditText
+                    android:id="@+id/edittext_twentytwo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+                <EditText
+                    android:id="@+id/edittext_twentythree"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+                <EditText
+                    android:id="@+id/edittext_twentyfour"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+                <EditText
+                    android:id="@+id/edittext_twentyfifth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

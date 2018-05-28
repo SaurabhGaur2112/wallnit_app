@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8sp"
+    android:background="@color/startBottomTextColor"
+    android:orientation="vertical"
+    tools:context="com.wallnit.wallnitlogin.WallnitUserAboutUs">
+
+    <EditText
+        android:id="@+id/user_aboutdesc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:inputType="textMultiLine"
+        style="@style/account_editaboutus"
+        android:background="@drawable/rounded_corner"
+        android:hint="@string/account_aboutdesc"
+        android:gravity="top"
+        android:padding="7sp"
+        android:textSize="13sp"
+        />
+</RelativeLayout>

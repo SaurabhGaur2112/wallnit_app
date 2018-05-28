@@ -1,0 +1,605 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wallnit.wallnitlogin">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-feature android:name="android.hardware.camera" android:required="true" />
+
+    <application
+        android:name=".WallnitCacheFile.AppController"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_wallnit"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".WallnitStart"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Wall"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".WallnitUserUploadText"
+            android:label="Text"
+            android:parentActivityName=".WallnitUserUploadText"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".WallnitUserUploadText" />
+        </activity>
+        <activity
+            android:name=".WallnitSignupUser"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".WallnitSignupCircle"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".WallnitLogin"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ForgetPassword_StepOne"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ForgetPassword_StepTwo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ForgetPassword_StepThird"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".WallnitTerms_of_Service"
+            android:label="Terms of Service"
+            android:parentActivityName=".WallnitSignupUser"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".WallnitSignupUser" />
+        </activity>
+        <activity
+            android:name=".WallnitUserAccountConfirmation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".WallnitUserAccountVerification"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".WallnitUserChooseInterest"
+            android:screenOrientation="portrait" >
+
+        </activity>
+        <activity
+            android:name=".WallnitCircleAccountConfirmation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".WallnitCircleAccountVerification"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".WallnitCircleCreateOptions"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".WallnitCircleCreateEntertainment"
+            android:label="Entertainment"
+            android:parentActivityName=".WallnitCircleCreateOptions"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".WallnitCircleCreateOptions" />
+        </activity>
+        <activity
+            android:name=".WallnitCircleCreateHealthAndFitness"
+            android:label="Health And Fitness"
+            android:parentActivityName=".WallnitCircleCreateOptions"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".WallnitCircleCreateOptions" />
+        </activity>
+        <activity
+            android:name=".WallnitCircleCreateInformational"
+            android:label="Informational"
+            android:parentActivityName=".WallnitCircleCreateOptions"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".WallnitCircleCreateOptions" />
+        </activity>
+        <activity
+            android:name=".WallnitCircleCreateBusiness"
+            android:label="Business"
+            android:parentActivityName=".WallnitCircleCreateOptions"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".WallnitCircleCreateOptions" />
+        </activity>
+        <activity
+            android:name=".WallnitCircleCreateLifestyle"
+            android:label="Lifestyle"
+            android:parentActivityName=".WallnitCircleCreateOptions"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".WallnitCircleCreateOptions" />
+        </activity>
+        <activity
+            android:name=".WallnitCircleCreateOther"
+            android:label="Other"
+            android:parentActivityName=".WallnitCircleCreateOptions"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".WallnitCircleCreateOptions" />
+        </activity>
+        <activity
+            android:name=".WallnitUserUploadStatus"
+            android:label="Status"
+            android:parentActivityName=".WallnitUserUploadStatus"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".WallnitUserUploadStatus" />
+        </activity>
+        <activity
+            android:name=".WallnitUserUploadLink"
+            android:label="Link"
+            android:parentActivityName=".WallnitUserUploadLink"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".WallnitUserUploadLink" />
+        </activity>
+        <activity
+            android:name=".WallnitUserUploadBlog"
+            android:label="Blog"
+            android:parentActivityName=".WallnitUserUploadBlog"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".WallnitUserUploadBlog" />
+        </activity>
+        <activity
+            android:name=".WallnitCircleUploadQuote"
+            android:label="Quote"
+            android:parentActivityName=".WallnitCircleUploadQuote"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".WallnitCircleUploadQuote" />
+        </activity>
+        <activity
+            android:name=".WallnitCircleUploadBlog"
+            android:label="Blog"
+            android:parentActivityName=".WallnitCircleUploadBlog"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".WallnitCircleUploadBlog" />
+        </activity>
+        <activity
+            android:name=".WallnitUserBackgroundOption"
+            android:label="@string/title_activity_wallnit_user_background_option"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".WallnitUserBackgroundImageTheme"
+            android:label="@string/title_activity_wallnit_user_background_image_theme"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".WallnitUserBackgroundGalleryTheme"
+            android:label="@string/title_activity_wallnit_user_background_gallery_theme"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".WallnitCircleBackgroundGalleryTheme"
+            android:label="@string/title_activity_wallnit_circle_background_gallery_theme"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".WallnitCircleBackgroundOption"
+            android:label="@string/title_activity_wallnit_circle_background_option"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".WallnitCircleBackgroundImageTheme"
+            android:label="@string/title_activity_wallnit_circle_background_image_theme"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".WallnitUserAccountSetting"
+            android:label="Account Setting"
+            android:parentActivityName=".WallnitUserAccountSetting"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".WallnitUserAccountSetting" />
+        </activity>
+        <activity
+            android:name=".WallnitCircleAccountSetting"
+            android:label="Circle Setting"
+            android:parentActivityName=".WallnitCircleAccountSetting"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".WallnitCircleAccountSetting" />
+        </activity>
+        <activity
+            android:name=".WallnitUserProfile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".WallnitCircleProfile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".WallnitUserMoreOption"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".WallnitCircleMoreOption"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".WallnitUploadUserImage"
+            android:label="@string/profilephoto_title"
+            android:parentActivityName=".WallnitUploadUserImage"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".WallnitUploadUserImage" />
+        </activity>
+        <activity
+            android:name=".WallnitUploadCircleImage"
+            android:label="@string/profilephoto_title"
+            android:parentActivityName=".WallnitCircleMoreOption"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".WallnitCircleMoreOption" />
+        </activity>
+        <activity
+            android:name=".WallnitUserHeaderOptions"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".WallnitUserAccountInformation"
+            android:label="@string/useraccount_information"
+            android:parentActivityName=".WallnitUserAccountSetting"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".WallnitUserAccountSetting" />
+        </activity>
+        <activity
+            android:name=".WallnitUserGeneralInformation"
+            android:label="@string/useraccount_generalinformation"
+            android:parentActivityName=".WallnitUserAccountSetting"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".WallnitUserAccountSetting" />
+        </activity>
+        <activity
+            android:name=".WallnitUserAccountWorkAndPlace"
+            android:label="@string/useraccount_work_ndplace"
+            android:parentActivityName=".WallnitUserAccountSetting"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".WallnitUserAccountSetting" />
+        </activity>
+        <activity
+            android:name=".WallnitUserAccountContact"
+            android:label="@string/useraccount_contact"
+            android:parentActivityName=".WallnitUserAccountSetting"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".WallnitUserAccountSetting" />
+        </activity>
+        <activity
+            android:name=".WallnitUserAboutUs"
+            android:label="@string/useraccount_aboutus"
+            android:parentActivityName=".WallnitUserAccountSetting"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".WallnitUserAccountSetting" />
+        </activity>
+        <activity
+            android:name=".WallnitCircleAccountInformation"
+            android:label="@string/header_circleinfo"
+            android:parentActivityName=".WallnitCircleAccountSetting"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".WallnitCircleAccountSetting" />
+        </activity>
+        <activity
+            android:name=".WallnitCircleAccountContact"
+            android:label="@string/header_circlecontactinfo"
+            android:parentActivityName=".WallnitCircleAccountSetting"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".WallnitCircleAccountSetting" />
+        </activity>
+        <activity
+            android:name=".WallnitCircleAboutUs"
+            android:label="@string/header_circleaboutusinfo"
+            android:parentActivityName=".WallnitCircleAccountSetting"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".WallnitCircleAccountSetting" />
+        </activity>
+        <activity
+            android:name=".WallnitUserChangePassword"
+            android:label="@string/useraccount_change_password"
+            android:parentActivityName=".WallnitUserAccountSetting"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".WallnitUserAccountSetting" />
+        </activity>
+        <activity
+            android:name=".WallnitCircleChangePassword"
+            android:label="@string/useraccount_change_password"
+            android:parentActivityName=".WallnitCircleAccountSetting"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".WallnitCircleAccountSetting" />
+        </activity>
+        <activity android:name=".WallnitAccountCirclePrivacy" />
+        <activity
+            android:name=".WallnitUserUploadPhotos"
+            android:label="Photos"
+            android:parentActivityName=".WallnitUserUploadPhotos"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".WallnitUserUploadPhotos" />
+        </activity>
+        <activity
+            android:name=".WallnitCircleUploadPhotos"
+            android:label="Photos"
+            android:parentActivityName=".WallnitCircleUploadPhotos"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".WallnitCircleUploadPhotos" />
+        </activity>
+        <activity
+            android:name=".WallnitOtherUserProfile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".WallnitUserPostReport"
+            android:label="Report"
+            android:parentActivityName=".WallnitUserPostReport"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".WallnitUserPostReport" />
+        </activity>
+        <activity
+            android:name=".WallnitUserFollowerList"
+            android:label="Follower"
+            android:parentActivityName=".WallnitUserFollowerList"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".WallnitUserFollowerList" />
+        </activity>
+        <activity
+            android:name=".WallnitUserFollowingList"
+            android:label="Following"
+            android:parentActivityName=".Wall"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Wall" />
+        </activity>
+        <activity
+            android:name=".WallnitUserPostLikeList"
+            android:label="Like"
+            android:parentActivityName=".Wall"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Wall" />
+        </activity>
+        <activity
+            android:name=".WallnitUserEditBlog"
+            android:label="Blog"
+            android:parentActivityName=".WallnitUserEditBlog"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".WallnitUserEditBlog" />
+        </activity>
+        <activity
+            android:name=".WallnitUserEditLink"
+            android:label="Link"
+            android:parentActivityName=".WallnitUserEditLink"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".WallnitUserEditLink" />
+        </activity>
+        <activity
+            android:name=".WallnitUserEditText"
+            android:label="Text"
+            android:parentActivityName=".WallnitUserEditText"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".WallnitUserEditText" />
+        </activity>
+        <activity
+            android:name=".WallnitUserEditPhotos"
+            android:label="Caption"
+            android:parentActivityName=".WallnitUserEditPhotos"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".WallnitUserEditPhotos" />
+        </activity>
+        <activity
+            android:name=".WallnitAndroidUserSearch"
+            android:label="Search"
+            android:parentActivityName=".WallnitAndroidUserSearch"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".WallnitAndroidUserSearch" />
+        </activity>
+        <activity
+            android:name=".WallnitUserSuggestionList"
+            android:label="Search"
+            android:parentActivityName=".WallnitUserSuggestionList"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".WallnitUserSuggestionList" />
+        </activity>
+        <activity
+            android:name=".WallnitCircleMemberList"
+            android:label="Member"
+            android:parentActivityName=".WallnitCircleMemberList"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".WallnitCircleMemberList" />
+        </activity>
+        <activity
+            android:name=".WallnitCircleSuggestionList"
+            android:label="Search"
+            android:parentActivityName=".WallnitCircleSuggestionList"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".WallnitCircleSuggestionList" />
+        </activity>
+        <activity
+            android:name=".WallnitAndroidCircleSearch"
+            android:label="Search"
+            android:parentActivityName=".WallnitAndroidCircleSearch"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".WallnitCircleSuggestionList" />
+        </activity>
+        <activity
+            android:name=".WallnitCircleOtherProfile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".WallnitCircleEditQuote"
+            android:label="Quote"
+            android:parentActivityName=".WallnitCircleEditQuote"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".WallnitCircleEditQuote" />
+        </activity>
+        <activity
+            android:name=".WallnitCircleEditPhotos"
+            android:label="Caption"
+            android:parentActivityName=".WallnitCircleEditPhotos"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".WallnitCircleEditPhotos" />
+        </activity>
+        <activity
+            android:name=".WallnitCircleEditBlog"
+            android:label="Blog"
+            android:parentActivityName=".WallnitCircleEditBlog"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".WallnitCircleEditBlog" />
+        </activity>
+        <activity
+            android:name=".WallnitCircleUserUploadQuote"
+            android:label="Quote"
+            android:parentActivityName=".WallnitCircleUserUploadQuote"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".WallnitCircleUserUploadQuote" />
+        </activity>
+        <activity
+            android:name=".WallnitCircleUserUploadBlog"
+            android:label="Blog"
+            android:parentActivityName=".WallnitCircleUserUploadBlog"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".WallnitCircleUserUploadBlog" />
+        </activity>
+        <activity
+            android:name=".WallnitCircleUserUploadPhotos"
+            android:label="Photos"
+            android:parentActivityName=".WallnitCircleUserUploadPhotos"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".WallnitCircleUserUploadPhotos" />
+        </activity>
+        <activity
+            android:name=".WallnitUserNoticiation"
+            android:label="Notification"
+            android:parentActivityName=".WallnitUserNoticiation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".WallnitUserNoticiation" />
+        </activity>
+        <activity
+            android:name=".WallnitUserLikeNotification"
+            android:label="Notification"
+            android:parentActivityName=".WallnitUserLikeNotification"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".WallnitUserLikeNotification" />
+        </activity>
+        <activity
+            android:name=".WallnitCircleLikeNotification"
+            android:label="Notification"
+            android:parentActivityName=".WallnitCircleLikeNotification"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".WallnitCircleLikeNotification" />
+        </activity>
+        <activity
+            android:name=".WallnitOwnProfilePost"
+            android:parentActivityName=".WallnitOwnProfilePost"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".WallnitOwnProfilePost" />
+        </activity>
+        <activity
+            android:name=".WallnitCircleOwnOtherPost"
+            android:parentActivityName=".WallnitCircleOwnOtherPost"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".WallnitCircleOwnOtherPost" />
+        </activity>
+        <activity android:name=".ForgetPasswordCircle_StepTwo" />
+        <activity android:name=".WallnitForgetCircleStepThird"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,1135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/circlePost_cardView_other"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        >
+
+        <!-- circle upload quote post start -->
+        <LinearLayout
+            android:id="@+id/circleprofile_userwall_textpost_layout_other"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            >
+            <LinearLayout
+                android:id="@+id/circleprofile_userwall_textpost_headerlayout_other"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:background="@color/editTextBoxColor"
+                >
+
+                <com.android.volley.toolbox.NetworkImageView
+                    android:id="@+id/quote_circleprofile_profile_other"
+                    style="@style/user_profileimage"
+                    />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/circleprofile_userwall_textpost_circlenamefont_other"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/circlename_fontsetting_wall"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/circleprofile_userwall_textpost_writebox_other"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#99000000"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColor="@color/editTextBoxColor"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/editTextBoxColor"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                >
+                <LinearLayout
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <ImageView
+                        android:layout_width="17sp"
+                        android:layout_height="17sp"
+                        android:src="@drawable/ic_postlike_icon"
+                        android:layout_marginTop="3sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/circleprofile_quotepost_totallike_other"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:textSize="12dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="5sp"
+                        android:layout_marginTop="3sp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/circleprofile_quotelcr_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:orientation="horizontal"
+                    android:layout_weight="2"
+                    >
+
+                    <ImageView
+                        android:id="@+id/circleprofile_quote_postunlike_other"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_postunlike_icon"
+                        android:adjustViewBounds="true"
+                        android:layout_weight="1"
+                        android:maxHeight="30sp"
+                        />
+
+                    <ImageView
+                        android:id="@+id/circleprofile_quote_postlike_other"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_postlike_icon"
+                        android:adjustViewBounds="true"
+                        android:layout_weight="1"
+                        android:maxHeight="30sp"
+                        android:visibility="gone"
+                        />
+
+                    <ImageView
+                        android:id="@+id/circleprofile_quote_postcomment_other"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_postcomment_icon"
+                        android:adjustViewBounds="true"
+                        android:layout_weight="1"
+                        android:maxHeight="30sp"
+                        />
+
+                    <ImageView
+                        android:id="@+id/circleprofile_quote_postreport_other"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_postreport_icon"
+                        android:adjustViewBounds="true"
+                        android:layout_weight="1"
+                        android:maxHeight="30sp"
+                        />
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <!-- circle upload quote post end -->
+
+        <!-- user post in circle quote post start -->
+        <LinearLayout
+            android:id="@+id/usercircle_textpost_layout_other"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            >
+            <LinearLayout
+                android:id="@+id/usercircle_textpost_headerlayout_other"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:background="@color/editTextBoxColor"
+                >
+                <com.android.volley.toolbox.NetworkImageView
+                    android:id="@+id/quote_userprofile_profile_other"
+                    style="@style/user_profileimage"
+                    android:visibility="gone"
+                    />
+
+                <ImageView
+                    android:id="@+id/usercircle_quotePost_anonymous_other"
+                    style="@style/profile_anonymousimage"
+                    android:src="@drawable/ic_anonymous_post"
+                    android:visibility="gone"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/usercircle_textpost_usernamefont_other"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/username_fontsetting_wall"
+                        />
+                    <TextView
+                        android:id="@+id/usercircle_textpost_hashtagnamefont_other"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/usercircle_textpost_writebox_other"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#99000000"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColor="@color/editTextBoxColor"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/editTextBoxColor"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                >
+                <LinearLayout
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <ImageView
+                        android:layout_width="17sp"
+                        android:layout_height="17sp"
+                        android:src="@drawable/ic_postlike_icon"
+                        android:layout_marginTop="3sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/circleuser_profile_quotepost_totallike"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:textSize="12dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="5sp"
+                        android:layout_marginTop="3sp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/circleUserprofile_quotelcr_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:orientation="horizontal"
+                    android:layout_weight="2"
+                    >
+
+                    <ImageView
+                        android:id="@+id/circleuser_profile_quote_postunlike_other"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_postunlike_icon"
+                        android:adjustViewBounds="true"
+                        android:layout_weight="1"
+                        android:maxHeight="30sp"
+                        />
+
+                    <ImageView
+                        android:id="@+id/circleuser_profile_quote_postlike_other"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_postlike_icon"
+                        android:adjustViewBounds="true"
+                        android:layout_weight="1"
+                        android:maxHeight="30sp"
+                        android:visibility="gone"
+                        />
+
+                    <ImageView
+                        android:id="@+id/circleuser_profile_quote_postcomment_other"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_postcomment_icon"
+                        android:adjustViewBounds="true"
+                        android:layout_weight="1"
+                        android:maxHeight="30sp"
+                        />
+
+                    <ImageView
+                        android:id="@+id/circleuser_profile_quote_postreport_other"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_postreport_icon"
+                        android:adjustViewBounds="true"
+                        android:layout_weight="1"
+                        android:maxHeight="30sp"
+                        />
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <!-- user post in circle quote post end -->
+
+        <!-- circle upload photos post start -->
+        <LinearLayout
+            android:id="@+id/circleprofile_photospost_layout_other"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            >
+            <LinearLayout
+                android:id="@+id/circleprofile_photospost_headerlayout_other"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:background="@color/editTextBoxColor"
+                >
+
+                <com.android.volley.toolbox.NetworkImageView
+                    android:id="@+id/photos_circleprofile_profile_other"
+                    style="@style/user_profileimage"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/circleprofile_photospost_usernamefont_other"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/circlename_fontsetting_wall"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/editTextBoxColor"
+                android:orientation="vertical"
+                >
+                <com.android.volley.toolbox.NetworkImageView
+                    android:id="@+id/circleprofile_photospost_writebox_other"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/editTextBoxColor"
+                    android:src="@drawable/actors"
+                    android:adjustViewBounds="true"
+                    android:visibility="gone"
+                    />
+
+                <com.android.volley.toolbox.NetworkImageView
+                    android:id="@+id/circleprofile_photospost_writeboxsecond_other"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/editTextBoxColor"
+                    android:src="@drawable/actors"
+                    android:adjustViewBounds="true"
+                    android:layout_marginTop="5dp"
+                    android:visibility="gone"
+                    />
+
+                <com.android.volley.toolbox.NetworkImageView
+                    android:id="@+id/circleprofile_photospost_writeboxthird_other"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/editTextBoxColor"
+                    android:src="@drawable/actors"
+                    android:adjustViewBounds="true"
+                    android:layout_marginTop="5dp"
+                    android:visibility="gone"
+                    />
+
+                <com.android.volley.toolbox.NetworkImageView
+                    android:id="@+id/circleprofile_photospost_writeboxfourth_other"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/editTextBoxColor"
+                    android:src="@drawable/actors"
+                    android:adjustViewBounds="true"
+                    android:layout_marginTop="5dp"
+                    android:visibility="gone"
+                    />
+
+                <com.android.volley.toolbox.NetworkImageView
+                    android:id="@+id/circleprofile_photospost_writeboxfifth_other"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/editTextBoxColor"
+                    android:src="@drawable/actors"
+                    android:adjustViewBounds="true"
+                    android:layout_marginTop="5dp"
+                    android:visibility="gone"
+                    />
+
+                <com.android.volley.toolbox.NetworkImageView
+                    android:id="@+id/circleprofile_photospost_writeboxsixth_other"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/editTextBoxColor"
+                    android:src="@drawable/actors"
+                    android:adjustViewBounds="true"
+                    android:layout_marginTop="5dp"
+                    android:visibility="gone"
+                    />
+
+                <com.android.volley.toolbox.NetworkImageView
+                    android:id="@+id/circleprofile_photospost_writeboxseventh_other"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/editTextBoxColor"
+                    android:src="@drawable/actors"
+                    android:adjustViewBounds="true"
+                    android:layout_marginTop="5dp"
+                    android:visibility="gone"
+                    />
+
+                <com.android.volley.toolbox.NetworkImageView
+                    android:id="@+id/circleprofile_photospost_writeboxeighth_other"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/editTextBoxColor"
+                    android:src="@drawable/actors"
+                    android:adjustViewBounds="true"
+                    android:layout_marginTop="5dp"
+                    android:visibility="gone"
+                    />
+
+                <com.android.volley.toolbox.NetworkImageView
+                    android:id="@+id/circleprofile_photospost_writeboxninth_other"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/editTextBoxColor"
+                    android:src="@drawable/actors"
+                    android:adjustViewBounds="true"
+                    android:layout_marginTop="5dp"
+                    android:visibility="gone"
+                    />
+
+                <com.android.volley.toolbox.NetworkImageView
+                    android:id="@+id/circleprofile_photospost_writeboxtenth_other"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/editTextBoxColor"
+                    android:src="@drawable/actors"
+                    android:adjustViewBounds="true"
+                    android:layout_marginTop="5dp"
+                    android:visibility="gone"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/circleprofile_photos_captionpost_writebox_other"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/editTextBoxColor"
+                android:paddingTop="10dp"
+                android:paddingBottom="20dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColor="@color/text_service_color"
+                android:textSize="12sp"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/editTextBoxColor"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                >
+                <LinearLayout
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <ImageView
+                        android:layout_width="17sp"
+                        android:layout_height="17sp"
+                        android:src="@drawable/ic_postlike_icon"
+                        android:layout_marginTop="3sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/circleprofile_photospost_totallike"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:textSize="12dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="5sp"
+                        android:layout_marginTop="3sp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/circleprofile_photoslcr_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:orientation="horizontal"
+                    android:layout_weight="2"
+                    >
+
+                    <ImageView
+                        android:id="@+id/circleprofile_photos_postunlike_other"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_postunlike_icon"
+                        android:adjustViewBounds="true"
+                        android:layout_weight="1"
+                        android:maxHeight="30sp"
+                        />
+
+                    <ImageView
+                        android:id="@+id/circleprofile_photos_postlike_other"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_postlike_icon"
+                        android:adjustViewBounds="true"
+                        android:layout_weight="1"
+                        android:maxHeight="30sp"
+                        android:visibility="gone"
+                        />
+
+                    <ImageView
+                        android:id="@+id/circleprofile_photos_postcomment_other"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_postcomment_icon"
+                        android:adjustViewBounds="true"
+                        android:layout_weight="1"
+                        android:maxHeight="30sp"
+                        />
+
+                    <ImageView
+                        android:id="@+id/circleprofile_photos_postreport_other"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_postreport_icon"
+                        android:adjustViewBounds="true"
+                        android:layout_weight="1"
+                        android:maxHeight="30sp"
+                        />
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <!-- circle upload photos post end -->
+
+        <!-- user post in circle photos post start -->
+        <LinearLayout
+            android:id="@+id/usercircle_photospost_layout_other"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            >
+            <LinearLayout
+                android:id="@+id/usercircle_photospost_headerlayout_other"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:background="@color/editTextBoxColor"
+                >
+                <com.android.volley.toolbox.NetworkImageView
+                    android:id="@+id/photos_userprofile_profile_other"
+                    style="@style/user_profileimage"
+                    android:visibility="gone"
+                    />
+
+                <ImageView
+                    android:id="@+id/usercircle_photosPost_anonymous_other"
+                    style="@style/profile_anonymousimage"
+                    android:src="@drawable/ic_anonymous_post"
+                    android:visibility="gone"
+                    />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/usercircle_photospost_usernamefont_other"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/username_fontsetting_wall"
+                        />
+                    <TextView
+                        android:id="@+id/usercircle_photospost_hashtagnamefont_other"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/editTextBoxColor"
+                android:orientation="vertical"
+                >
+                <com.android.volley.toolbox.NetworkImageView
+                    android:id="@+id/usercircle_photospost_writebox_other"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/editTextBoxColor"
+                    android:src="@drawable/actors"
+                    android:adjustViewBounds="true"
+                    android:visibility="gone"
+                    />
+
+                <com.android.volley.toolbox.NetworkImageView
+                    android:id="@+id/usercircle_photospost_writeboxsecond_other"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/editTextBoxColor"
+                    android:src="@drawable/actors"
+                    android:adjustViewBounds="true"
+                    android:layout_marginTop="5dp"
+                    android:visibility="gone"
+                    />
+
+                <com.android.volley.toolbox.NetworkImageView
+                    android:id="@+id/usercircle_photospost_writeboxthird_other"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/editTextBoxColor"
+                    android:src="@drawable/actors"
+                    android:adjustViewBounds="true"
+                    android:layout_marginTop="5dp"
+                    android:visibility="gone"
+                    />
+
+                <com.android.volley.toolbox.NetworkImageView
+                    android:id="@+id/usercircle_photospost_writeboxfourth_other"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/editTextBoxColor"
+                    android:src="@drawable/actors"
+                    android:adjustViewBounds="true"
+                    android:layout_marginTop="5dp"
+                    android:visibility="gone"
+                    />
+
+                <com.android.volley.toolbox.NetworkImageView
+                    android:id="@+id/usercircle_photospost_writeboxfifth_other"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/editTextBoxColor"
+                    android:src="@drawable/actors"
+                    android:adjustViewBounds="true"
+                    android:layout_marginTop="5dp"
+                    android:visibility="gone"
+                    />
+
+                <com.android.volley.toolbox.NetworkImageView
+                    android:id="@+id/usercircle_photospost_writeboxsixth_other"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/editTextBoxColor"
+                    android:src="@drawable/actors"
+                    android:adjustViewBounds="true"
+                    android:layout_marginTop="5dp"
+                    android:visibility="gone"
+                    />
+
+                <com.android.volley.toolbox.NetworkImageView
+                    android:id="@+id/usercircle_photospost_writeboxseventh_other"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/editTextBoxColor"
+                    android:src="@drawable/actors"
+                    android:adjustViewBounds="true"
+                    android:layout_marginTop="5dp"
+                    android:visibility="gone"
+                    />
+
+                <com.android.volley.toolbox.NetworkImageView
+                    android:id="@+id/usercircle_photospost_writeboxeighth_other"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/editTextBoxColor"
+                    android:src="@drawable/actors"
+                    android:adjustViewBounds="true"
+                    android:layout_marginTop="5dp"
+                    android:visibility="gone"
+                    />
+
+                <com.android.volley.toolbox.NetworkImageView
+                    android:id="@+id/usercircle_photospost_writeboxninth_other"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/editTextBoxColor"
+                    android:src="@drawable/actors"
+                    android:adjustViewBounds="true"
+                    android:layout_marginTop="5dp"
+                    android:visibility="gone"
+                    />
+
+                <com.android.volley.toolbox.NetworkImageView
+                    android:id="@+id/usercircle_photospost_writeboxtenth_other"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/editTextBoxColor"
+                    android:src="@drawable/actors"
+                    android:adjustViewBounds="true"
+                    android:layout_marginTop="5dp"
+                    android:visibility="gone"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/usercircle_photos_captionpost_writebox_other"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/editTextBoxColor"
+                android:paddingTop="10dp"
+                android:paddingBottom="20dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColor="@color/text_service_color"
+                android:textSize="12sp"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/editTextBoxColor"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                >
+                <LinearLayout
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <ImageView
+                        android:layout_width="17sp"
+                        android:layout_height="17sp"
+                        android:src="@drawable/ic_postlike_icon"
+                        android:layout_marginTop="3sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/circle_user_profile_photospost_totallike"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:textSize="12dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="5sp"
+                        android:layout_marginTop="3sp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/circleUserprofile_photoslcr_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:orientation="horizontal"
+                    android:layout_weight="2"
+                    >
+
+                    <ImageView
+                        android:id="@+id/circle_user_profile_photos_postunlike_other"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_postunlike_icon"
+                        android:adjustViewBounds="true"
+                        android:layout_weight="1"
+                        android:maxHeight="30sp"
+                        />
+
+                    <ImageView
+                        android:id="@+id/circle_user_profile_photos_postlike_other"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_postlike_icon"
+                        android:adjustViewBounds="true"
+                        android:layout_weight="1"
+                        android:maxHeight="30sp"
+                        android:visibility="gone"
+                        />
+
+                    <ImageView
+                        android:id="@+id/circle_user_profile_photos_postcomment_other"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_postcomment_icon"
+                        android:adjustViewBounds="true"
+                        android:layout_weight="1"
+                        android:maxHeight="30sp"
+                        />
+
+                    <ImageView
+                        android:id="@+id/circle_user_profile_photos_postreport_other"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_postreport_icon"
+                        android:adjustViewBounds="true"
+                        android:layout_weight="1"
+                        android:maxHeight="30sp"
+                        />
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <!-- user post in circle photos post end -->
+
+        <!-- circle upload blog post start -->
+        <LinearLayout
+            android:id="@+id/circleprofile_blogpost_layout_other"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            >
+            <LinearLayout
+                android:id="@+id/circleprofile_blogpost_headerlayout_other"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:background="@color/editTextBoxColor"
+                >
+
+                <com.android.volley.toolbox.NetworkImageView
+                    android:id="@+id/blog_circleprofile_profile_other"
+                    style="@style/user_profileimage"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp"
+                    >
+                    <TextView
+                        android:id="@+id/circleprofile_blogpost_usernamefont_other"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/circlename_fontsetting_wall"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/circleprofile_blog_titlepost_writebox_other"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/editTextBoxColor"
+                android:paddingTop="10dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColor="@color/text_service_color"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/circleprofile_blog_writingpost_writebox_other"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/editTextBoxColor"
+                android:paddingBottom="20dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColor="@color/text_service_color"
+                android:textSize="13sp"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/editTextBoxColor"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                >
+                <LinearLayout
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <ImageView
+                        android:layout_width="17sp"
+                        android:layout_height="17sp"
+                        android:src="@drawable/ic_postlike_icon"
+                        android:layout_marginTop="3sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/circleprofile_blogpost_totallike"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:textSize="12dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="5sp"
+                        android:layout_marginTop="3sp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/circleprofile_bloglcr_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:orientation="horizontal"
+                    android:layout_weight="2"
+                    >
+
+                    <ImageView
+                        android:id="@+id/circleprofile_blog_postunlike_other"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_postunlike_icon"
+                        android:adjustViewBounds="true"
+                        android:layout_weight="1"
+                        android:maxHeight="30sp"
+                        />
+
+                    <ImageView
+                        android:id="@+id/circleprofile_blog_postlike_other"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_postlike_icon"
+                        android:adjustViewBounds="true"
+                        android:layout_weight="1"
+                        android:maxHeight="30sp"
+                        android:visibility="gone"
+                        />
+
+                    <ImageView
+                        android:id="@+id/circleprofile_blog_postcomment_other"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_postcomment_icon"
+                        android:adjustViewBounds="true"
+                        android:layout_weight="1"
+                        android:maxHeight="30sp"
+                        />
+
+                    <ImageView
+                        android:id="@+id/circleprofile_blog_postreport_other"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_postreport_icon"
+                        android:adjustViewBounds="true"
+                        android:layout_weight="1"
+                        android:maxHeight="30sp"
+                        />
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <!-- circle upload blog post end -->
+
+        <!-- user post in circle blog post start -->
+        <LinearLayout
+            android:id="@+id/usercircle_blogpost_layout_other"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            >
+            <LinearLayout
+                android:id="@+id/usercircle_blogpost_headerlayout_other"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:background="@color/editTextBoxColor"
+                >
+                <com.android.volley.toolbox.NetworkImageView
+                    android:id="@+id/blog_userprofile_profile_other"
+                    style="@style/user_profileimage"
+                    android:visibility="gone"
+                    />
+
+                <ImageView
+                    android:id="@+id/usercircle_blogPost_anonymous_other"
+                    style="@style/profile_anonymousimage"
+                    android:src="@drawable/ic_anonymous_post"
+                    android:visibility="gone"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp"
+                    >
+                    <TextView
+                        android:id="@+id/usercircle_blogpost_usernamefont_other"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/username_fontsetting_wall"
+                        />
+                    <TextView
+                        android:id="@+id/usercircle_blogpost_hashtagnamefont_other"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/usercircle_blog_titlepost_writebox_other"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/editTextBoxColor"
+                android:paddingTop="10dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColor="@color/text_service_color"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/usercircle_blog_writingpost_writebox_other"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/editTextBoxColor"
+                android:paddingBottom="20dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColor="@color/text_service_color"
+                android:textSize="13sp"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/editTextBoxColor"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                >
+                <LinearLayout
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <ImageView
+                        android:layout_width="17sp"
+                        android:layout_height="17sp"
+                        android:src="@drawable/ic_postlike_icon"
+                        android:layout_marginTop="3sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/circleUserprofile_blogpost_totallike"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:textSize="12dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="5sp"
+                        android:layout_marginTop="3sp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/circleUserprofile_bloglcr_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:orientation="horizontal"
+                    android:layout_weight="2"
+                    >
+
+                    <ImageView
+                        android:id="@+id/circle_user_profile_blog_postunlike_other"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_postunlike_icon"
+                        android:adjustViewBounds="true"
+                        android:layout_weight="1"
+                        android:maxHeight="30sp"
+                        />
+
+                    <ImageView
+                        android:id="@+id/circle_user_profile_blog_postlike_other"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_postlike_icon"
+                        android:adjustViewBounds="true"
+                        android:layout_weight="1"
+                        android:maxHeight="30sp"
+                        android:visibility="gone"
+                        />
+
+                    <ImageView
+                        android:id="@+id/circle_user_profile_blog_postcomment_other"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_postcomment_icon"
+                        android:adjustViewBounds="true"
+                        android:layout_weight="1"
+                        android:maxHeight="30sp"
+                        />
+
+                    <ImageView
+                        android:id="@+id/circle_user_profile_blog_postreport_other"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_postreport_icon"
+                        android:adjustViewBounds="true"
+                        android:layout_weight="1"
+                        android:maxHeight="30sp"
+                        />
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <!-- user post in circle blog post end -->
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="backgroundColorDefault">#293550</color>
+    <color name="startBottomTextColor">#c3c3c3</color>
+    <color name="editTextBoxColor">#ffffff</color>
+    <color name="text_service_color">#3e3e3e</color>
+    <color name="create_circle_first">#4AA8D8</color>
+    <color name="create_circle_second">#F2992E</color>
+    <color name="create_circle_third">#56BC8A</color>
+    <color name="create_circle_fourth">#A77DC2</color>
+    <color name="create_circle_fifth">#3F8384</color>
+    <color name="create_circle_sixth">#E35056</color>
+    <color name="blog_title_clr">#7F7F7F</color>
+    <color name="upload_postcolor">#00897b</color>
+    <color name="username_fontclr">#000000</color>
+    <color name="userpost_link">#72A7DF</color>
+
+    <color name="white">#ffffff</color>
+    <color name="feed_bg">#d3d6db</color>
+    <color name="feed_item_bg">#ffffff</color>
+    <color name="feed_item_border">#c2c3c8</color>
+    <color name="link">#0a80d1</color>
+    <color name="timestamp">#a0a3a7</color>
+</resources>

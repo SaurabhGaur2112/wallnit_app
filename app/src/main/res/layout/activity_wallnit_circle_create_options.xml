@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_interest_vertical_margin"
+    android:paddingLeft="@dimen/activity_interest_horozontal_margin"
+    android:paddingRight="@dimen/activity_interest_horozontal_margin"
+    android:paddingTop="@dimen/activity_interest_vertical_margin"
+    android:background="@color/backgroundColorDefault"
+    tools:context="com.wallnit.wallnitlogin.WallnitCircleCreateOptions">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/create_circle_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/create_circle_title"
+        style="@style/interest_title"
+        />
+
+    <LinearLayout
+        android:id="@+id/create_layout_first"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_below="@id/create_circle_title"
+        android:layout_marginTop="10dp"
+        android:background="@color/create_circle_first"
+        >
+
+        <TextView
+            android:id="@+id/entertainment_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/entertainment_title"
+            style="@style/create_title_circle"
+            />
+
+        <TextView
+            android:id="@+id/entertainment_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/create_desc_circle"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/create_layout_second"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_below="@id/create_layout_first"
+        android:layout_marginTop="10dp"
+        android:background="@color/create_circle_second"
+        >
+
+        <TextView
+            android:id="@+id/health_and_fitness_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/health_and_fitness_title"
+            style="@style/create_title_circle"
+            />
+
+        <TextView
+            android:id="@+id/health_and_fitness_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/create_desc_circle"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/create_layout_third"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_below="@id/create_layout_second"
+        android:layout_marginTop="10dp"
+        android:background="@color/create_circle_third"
+        >
+
+        <TextView
+            android:id="@+id/informational_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/informational_title"
+            style="@style/create_title_circle"
+            />
+
+        <TextView
+            android:id="@+id/informational_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/create_desc_circle"
+            />
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/create_layout_fourth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_below="@id/create_layout_third"
+        android:layout_marginTop="10dp"
+        android:background="@color/create_circle_fourth"
+        >
+        <TextView
+            android:id="@+id/business_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/business_title"
+            style="@style/create_title_circle"
+            />
+
+        <TextView
+            android:id="@+id/business_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/create_desc_circle"
+            />
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/create_layout_fifth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_below="@id/create_layout_fourth"
+        android:layout_marginTop="10dp"
+        android:background="@color/create_circle_fifth"
+        >
+
+        <TextView
+            android:id="@+id/lifestyle_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lifestyle_title"
+            style="@style/create_title_circle"
+            />
+
+        <TextView
+            android:id="@+id/lifestyle_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/create_desc_circle"
+            />
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/create_layout_sixth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_below="@id/create_layout_fifth"
+        android:layout_marginTop="10dp"
+        android:background="@color/create_circle_sixth"
+        >
+
+        <TextView
+            android:id="@+id/other_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/other_title"
+            style="@style/create_title_circle"
+            />
+
+        <TextView
+            android:id="@+id/other_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/create_desc_circle"
+            />
+
+        </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

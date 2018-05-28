@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="7sp"
+    tools:context="com.wallnit.wallnitlogin.WallnitUserUploadLink">
+
+    <EditText
+        android:id="@+id/link_post"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/editTextBoxColor"
+        style="@style/linkpost"
+        android:singleLine="true"
+        android:hint="@string/linkhintpost"
+        android:padding="3sp"
+        android:text="http://"
+        />
+    <CheckBox
+        android:id="@+id/user_upload_linkpost_anonymous"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/anonymous_text"
+        android:layout_alignParentRight="true"
+        />
+
+    <EditText
+        android:id="@+id/user_upload_linkpost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="@string/upload_posttext"
+        style="@style/upload_textboxpost"
+        android:background="@color/editTextBoxColor"
+        android:layout_above="@id/user_upload_linkpost_anonymous"
+        android:layout_below="@id/link_post"
+        android:layout_marginTop="5sp"
+        android:padding="3sp"
+        />
+
+    <EditText
+        android:id="@+id/eduser_linkpost_anonymous"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:visibility="gone"
+        />
+
+    <EditText
+        android:id="@+id/userpostlink_userorcircle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="user"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>

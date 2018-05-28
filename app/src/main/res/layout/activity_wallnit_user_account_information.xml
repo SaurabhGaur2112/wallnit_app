@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/startBottomTextColor"
+    android:orientation="vertical"
+    tools:context="com.wallnit.wallnitlogin.WallnitUserAccountInformation">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/useraccount_setting_accountinfotxt_first"
+        style="@style/account_settingtxtlabel"
+        />
+
+    <EditText
+        android:id="@+id/account_info_usernameedit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:hint="@string/useraccount_setting_accountinfotxt_first"
+        android:textColor="@color/editTextBoxColor"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/account_setting_labelthird"
+        style="@style/account_settingtxtlabel"
+        />
+
+    <EditText
+        android:id="@+id/account_info_tagnameedit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:hint="@string/account_setting_labelthird"
+        android:textColor="@color/editTextBoxColor"
+        />
+</LinearLayout>

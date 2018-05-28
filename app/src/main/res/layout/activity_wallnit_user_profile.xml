@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/backgroundColorDefault"
+    tools:context="com.wallnit.wallnitlogin.WallnitUserProfile">
+
+    <!-- background image start -->
+
+    <ImageView
+        android:id="@+id/profile_backgroundimage_set"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:scaleType="centerCrop"
+        android:layout_alignParentTop="true"
+        />
+
+    <!-- background image end -->
+
+    <!-- background image gif start -->
+
+    <WebView
+        android:id="@+id/profile_backgroundimage_gif_set"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:visibility="gone"
+        ></WebView>
+    <!-- background image gif end -->
+
+    <include
+        android:id="@+id/wall_include_header_layout"
+        layout="@layout/activity_wallnit_user_header_options" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/wall_include_header_layout"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <!-- user profile detail start -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#99000000"
+                android:padding="5dp"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        >
+
+                        <!-- profile image start -->
+                        <ImageView
+                            android:id="@+id/profile_image"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_marginLeft="10sp"
+                            android:layout_marginTop="10sp"
+                            android:scaleType="centerCrop"
+                            android:visibility="gone"
+                            />
+
+                        <!-- profile image end -->
+
+                        <!-- profile image gif start -->
+
+                        <FrameLayout
+                            android:id="@+id/profile_framelayout_set"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_marginLeft="10sp"
+                            android:layout_marginTop="10sp"
+                            android:visibility="gone"
+                            >
+
+                            <WebView
+                                android:id="@+id/profile_profileimage_gif_set"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scrollbars="none"
+                                android:visibility="gone"
+                                ></WebView>
+
+                        </FrameLayout>
+
+                        <!-- profile image gif end -->
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:layout_marginTop="10sp"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            >
+
+                            <TextView
+                                android:id="@+id/profileno_follower"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Followers"
+                                android:textColor="@color/editTextBoxColor"
+                                android:layout_weight="1"
+                                android:layout_gravity="center"
+                                />
+
+                            <TextView
+                                android:id="@+id/profileno_follower_number"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_gravity="center"
+                                android:textColor="@color/editTextBoxColor"
+                                />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            >
+
+                            <TextView
+                                android:id="@+id/profileno_following"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Following"
+                                android:textColor="@color/editTextBoxColor"
+                                android:layout_weight="1"
+                                android:layout_gravity="center"
+                                />
+
+                            <TextView
+                                android:id="@+id/profileno_following_number"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:textColor="@color/editTextBoxColor"
+                                android:layout_marginTop="10dp"
+                                />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/profile_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/editTextBoxColor"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:visibility="gone"
+                    />
+
+                <TextView
+                    android:id="@+id/profile_tagname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/editTextBoxColor"
+                    android:layout_marginLeft="10dp"
+                    android:visibility="gone"
+                    />
+
+                <TextView
+                    android:id="@+id/user_startuswrite_show"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/editTextBoxColor"
+                    android:layout_marginTop="10sp"
+                    android:visibility="gone"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="About User"
+                    android:textColor="@color/editTextBoxColor"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/profile_gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/editTextBoxColor"
+                    android:layout_marginLeft="10dp"
+                    android:visibility="gone"
+                    />
+
+                <TextView
+                    android:id="@+id/profile_dob"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:textColor="@color/editTextBoxColor"
+                    android:layout_marginLeft="10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/profile_place"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:textColor="@color/editTextBoxColor"
+                    android:layout_marginLeft="10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/profile_work"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:textColor="@color/editTextBoxColor"
+                    android:layout_marginLeft="10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/profile_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:textColor="@color/editTextBoxColor"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="20dp"
+                    />
+
+            </LinearLayout>
+
+            <!-- user profile detail end -->
+
+            <Button
+                android:id="@+id/postseebtn_own"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="See Post"
+                android:layout_gravity="center_horizontal"
+                android:clickable="true"
+                android:visibility="gone"
+                />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

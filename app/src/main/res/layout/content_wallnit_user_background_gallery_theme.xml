@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_interest_vertical_margin"
+    android:paddingLeft="@dimen/activity_interest_horozontal_margin"
+    android:paddingRight="@dimen/activity_interest_horozontal_margin"
+    android:paddingTop="@dimen/activity_interest_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.wallnit.wallnitlogin.WallnitUserBackgroundGalleryTheme"
+    tools:showIn="@layout/app_bar_wallnit_user_background_gallery_theme">
+
+    <GridView
+        android:id="@+id/user_backgroundphoto_gallery"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="auto_fit"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="2dp"
+        android:horizontalSpacing="2dp"
+        android:gravity="center"
+        android:columnWidth="120dp"
+        >
+    </GridView>
+
+
+</RelativeLayout>

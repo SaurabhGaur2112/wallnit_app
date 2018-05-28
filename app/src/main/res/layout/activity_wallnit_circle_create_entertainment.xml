@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_interest_vertical_margin"
+    android:paddingLeft="@dimen/activity_interest_horozontal_margin"
+    android:paddingRight="@dimen/activity_interest_horozontal_margin"
+    android:paddingTop="@dimen/activity_interest_vertical_margin"
+    tools:context="com.wallnit.wallnitlogin.WallnitCircleCreateEntertainment">
+
+    <EditText
+        android:id="@+id/entertainment_circlename"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:editable="false"
+        android:hint="@string/circlename_createcircle"
+        android:textSize="15sp"
+        />
+
+    <TextView
+        android:id="@+id/content_to_post"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/entertainment_circlename"
+        android:text="@string/content_to_post"
+        style="@style/textin_createcircle"
+        />
+
+    <Spinner
+        android:id="@+id/content_to_post_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/content_to_post"
+        android:entries="@array/content_post"
+        ></Spinner>
+
+    <TextView
+        android:id="@+id/category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/content_to_post_spinner"
+        android:text="@string/category_to_post"
+        style="@style/textin_createcircle"
+        />
+
+    <Spinner
+        android:id="@+id/category_to_post_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/category"
+        android:entries="@array/entertainment_category"
+        ></Spinner>
+
+    <EditText
+        android:id="@+id/circle_description_writecreate"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/category_to_post_spinner"
+        android:inputType="textMultiLine"
+        android:gravity="top"
+        android:hint="@string/circlewritedesc"
+        android:textSize="15sp"
+        />
+
+    <EditText
+        android:id="@+id/entertainment_contenttopost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        />
+
+    <EditText
+        android:id="@+id/entertainment_categorytopost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        />
+
+
+</RelativeLayout>

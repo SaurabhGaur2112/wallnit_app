@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/startBottomTextColor"
+    android:orientation="vertical"
+    tools:context="com.wallnit.wallnitlogin.WallnitCircleAccountInformation">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/circle_setting_labelfirst"
+        style="@style/account_settingtxtlabel"
+        />
+
+    <EditText
+        android:id="@+id/circle_account_circlename"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:hint="@string/circle_setting_labelfirst"
+        android:textColor="@color/editTextBoxColor"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/circle_setting_labelthird"
+        style="@style/account_settingtxtlabel"
+        />
+
+    <EditText
+        android:id="@+id/circle_account_createdon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:hint="@string/circle_setting_labelthird"
+        android:textColor="@color/editTextBoxColor"
+        android:editable="false"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/circle_setting_labelfourth"
+        style="@style/account_settingtxtlabel"
+        />
+
+    <EditText
+        android:id="@+id/circle_account_creator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:hint="@string/circle_setting_labelfourth"
+        android:textColor="@color/editTextBoxColor"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/circle_setting_labelfifth"
+        style="@style/account_settingtxtlabel"
+        />
+
+    <EditText
+        android:id="@+id/circle_account_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:hint="@string/circle_setting_labelfifth"
+        android:textColor="@color/editTextBoxColor"
+        android:editable="false"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/circle_setting_labelsixth"
+        style="@style/account_settingtxtlabel"
+        />
+
+    <EditText
+        android:id="@+id/circle_account_contentto_post"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:hint="@string/circle_setting_labelsixth"
+        android:textColor="@color/editTextBoxColor"
+        android:editable="false"
+        />
+
+
+</LinearLayout>

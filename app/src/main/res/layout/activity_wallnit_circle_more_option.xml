@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/backgroundColorDefault"
+    android:orientation="vertical"
+    tools:context="com.wallnit.wallnitlogin.WallnitCircleMoreOption">
+
+    <include
+        android:id="@+id/header_morelayout"
+        layout="@layout/activity_wallnit_circle_header_options"/>
+
+    <ImageView
+        android:id="@+id/circleprofile_changeclick"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/post_image_background"
+        android:layout_marginTop="15sp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center_horizontal"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/circleprofile_changeclick"
+        android:layout_marginTop="10sp"
+        android:padding="15sp"
+        >
+
+        <TextView
+            android:id="@+id/more_Userprofilename"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/profilename_more"
+            />
+
+
+        <ListView
+            style="@style/horizontal_line_distribute"
+            ></ListView>
+
+
+
+        <LinearLayout
+            android:id="@+id/circle_accountSetting_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:layout_width="30sp"
+                android:layout_height="30sp"
+                android:layout_marginTop="11sp"
+                android:src="@drawable/ic_account_setting_icon"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17sp"
+                android:text="Account Setting"
+                android:textColor="@color/editTextBoxColor"
+                android:layout_marginLeft="15sp"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            >
+
+            <ImageView
+                android:layout_width="30sp"
+                android:layout_height="30sp"
+                android:layout_marginTop="10sp"
+                android:src="@drawable/ic_home_icon"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17sp"
+                android:text="Privacy"
+                android:textColor="@color/editTextBoxColor"
+                android:layout_marginLeft="15sp"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/circle_logoutLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:layout_width="30sp"
+                android:layout_height="30sp"
+                android:layout_marginTop="12sp"
+                android:src="@drawable/ic_logout_icon"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17sp"
+                android:text="Logout"
+                android:textColor="@color/editTextBoxColor"
+                android:layout_marginLeft="15sp"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/circleProfile_emailid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45sp"
+            android:textColor="@color/editTextBoxColor"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColorDefault"
+    tools:context="com.wallnit.wallnitlogin.Wall">
+
+
+    <!-- background image start -->
+
+    <ImageView
+        android:id="@+id/wall_backgroundimage_set"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:scaleType="centerCrop"
+        android:layout_alignParentTop="true"
+        android:visibility="gone"
+        />
+
+    <!-- background image end -->
+
+    <!-- background image gif start -->
+
+    <WebView
+        android:id="@+id/wall_backgroundimage_gif_set"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:visibility="gone"
+        ></WebView>
+
+    <!-- background image gif end -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <include
+            android:id="@+id/wall_include_header_layout"
+            layout="@layout/activity_wallnit_user_header_options" />
+
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/wall_swipeRefresh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/wall_include_header_layout"
+            >
+
+                <ListView
+                    android:id="@+id/wallListView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@null"
+                    android:layout_below="@id/wall_include_header_layout"
+                    ></ListView>
+        
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <ProgressBar
+            android:id="@+id/wall_progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="400sp"
+            />
+
+        </RelativeLayout>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_user_text_uploadoption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="315dp"
+        android:elevation="6dp"
+        app:pressedTranslationZ="12dp"
+        app:backgroundTint="@color/editTextBoxColor"
+        android:visibility="invisible"
+        android:src="@drawable/fab_icon_uploadtext"
+        android:scaleType="center"
+        />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_user_photo_uploadoption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="255dp"
+        android:elevation="6dp"
+        app:pressedTranslationZ="12dp"
+        app:backgroundTint="@color/editTextBoxColor"
+        android:visibility="invisible"
+        android:src="@drawable/fab_icon_uploadphotos"
+        android:scaleType="center"
+        />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_user_blog_uploadoption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="195dp"
+        android:elevation="6dp"
+        app:pressedTranslationZ="12dp"
+        app:backgroundTint="@color/editTextBoxColor"
+        android:visibility="invisible"
+        android:src="@drawable/fab_icon_uploadblog"
+        android:scaleType="center"
+        />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_user_status_uploadoption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="135dp"
+        android:elevation="6dp"
+        app:pressedTranslationZ="12dp"
+        app:backgroundTint="@color/editTextBoxColor"
+        android:visibility="invisible"
+        android:src="@drawable/fab_icon_uploadstatus"
+        android:scaleType="center"
+        />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_user_link_uploadoption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="75dp"
+        android:elevation="6dp"
+        app:pressedTranslationZ="12dp"
+        app:backgroundTint="@color/editTextBoxColor"
+        android:visibility="invisible"
+        android:src="@drawable/fab_icon_uploadlink"
+        android:scaleType="center"
+        />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_user_all_uploadoption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:elevation="6dp"
+        app:pressedTranslationZ="12dp"
+        android:layout_margin="16dp"
+        app:backgroundTint="@color/upload_postcolor"
+        android:src="@drawable/ic_upload_post"
+        />
+
+
+</android.support.design.widget.CoordinatorLayout>

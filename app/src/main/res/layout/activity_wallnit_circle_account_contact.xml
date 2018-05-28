@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/startBottomTextColor"
+    android:orientation="vertical"
+    tools:context="com.wallnit.wallnitlogin.WallnitCircleAccountContact">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/account_setting_labelsecond"
+        style="@style/account_settingtxtlabel"
+        />
+
+    <EditText
+        android:id="@+id/circle_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:hint="@string/account_setting_labelsecond"
+        android:textColor="@color/editTextBoxColor"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/circle_setting_labelseventh"
+        style="@style/account_settingtxtlabel"
+        />
+
+    <EditText
+        android:id="@+id/circle_website"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:hint="@string/circle_setting_labelseventh"
+        android:textColor="@color/editTextBoxColor"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/circle_setting_labeleighth"
+        style="@style/account_settingtxtlabel"
+        />
+
+    <EditText
+        android:id="@+id/circle_contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:hint="@string/circle_setting_labeleighth"
+        android:textColor="@color/editTextBoxColor"
+        />
+
+</LinearLayout>

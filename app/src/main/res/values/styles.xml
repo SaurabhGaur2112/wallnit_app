@@ -1,0 +1,325 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/backgroundColorDefault</item>
+    </style>
+
+    <style name="start_activity_button">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="signup_asuser_textbottom">
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/startBottomTextColor</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="forget_password_style">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">5sp</item>
+        <item name="android:textColor">@color/startBottomTextColor</item>
+    </style>
+
+    <style name="signup_ascircle_textbottom">
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/startBottomTextColor</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="signup_title_styles">
+        <item name="android:textColor">@color/startBottomTextColor</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+
+    <style name="signup_useredit_text">
+        <item name="android:hint">@string/signup_username</item>
+        <item name="android:textColorHint">@color/startBottomTextColor</item>
+        <item name="android:textColor">@color/editTextBoxColor</item>
+    </style>
+
+    <style name="signup_circleedit_text">
+        <item name="android:hint">@string/signup_circlename</item>
+        <item name="android:textColorHint">@color/startBottomTextColor</item>
+        <item name="android:textColor">@color/editTextBoxColor</item>
+    </style>
+
+    <style name="signup_emailedit_text">
+        <item name="android:textColor">@color/editTextBoxColor</item>
+        <item name="android:textColorHint">@color/startBottomTextColor</item>
+        <item name="android:hint">@string/signup_email</item>
+    </style>
+
+    <style name="signup_passedit_text">
+        <item name="android:textColor">@color/editTextBoxColor</item>
+        <item name="android:textColorHint">@color/startBottomTextColor</item>
+        <item name="android:hint">@string/signup_password</item>
+    </style>
+
+    <style name="signup_button">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="terms_of_servicetxt">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">5sp</item>
+        <item name="android:textColor">@color/startBottomTextColor</item>
+    </style>
+
+    <style name="forget_password_title">
+        <item name="android:textColor">@color/editTextBoxColor</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="forget_password_description">
+        <item name="android:textColor">@color/editTextBoxColor</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="forgetpassword_edittext">
+        <item name="android:textColor">@color/editTextBoxColor</item>
+        <item name="android:textColorHint">@color/startBottomTextColor</item>
+        <item name="android:paddingLeft">5sp</item>
+    </style>
+
+    <style name="terms_of_service_text">
+        <item name="android:background">@color/editTextBoxColor</item>
+        <item name="android:layout_marginTop">5sp</item>
+        <item name="android:padding">5sp</item>
+    </style>
+
+    <style name="terms_of_service_title">
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/text_service_color</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="terms_of_posted">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/text_service_color</item>
+    </style>
+
+    <style name="terms_write">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="country_codebox">
+        <item name="android:textColor">@color/editTextBoxColor</item>
+    </style>
+
+    <style name="account_codeverifi">
+        <item name="android:textColor">@color/editTextBoxColor</item>
+        <item name="android:textColorHint">@color/startBottomTextColor</item>
+    </style>
+
+    <style name="interest_title">
+        <item name="android:textColor">@color/editTextBoxColor</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="interest_desc">
+        <item name="android:textColor">@color/editTextBoxColor</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">7sp</item>
+    </style>
+
+    <style name="interest_image_right">
+        <item name="android:layout_weight">1</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:layout_marginRight">2dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_marginTop">2dp</item>
+    </style>
+
+    <style name="interest_image_left">
+        <item name="android:layout_weight">1</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:layout_marginLeft">2dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_marginTop">2dp</item>
+    </style>
+
+
+    <style name="create_title_circle">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/editTextBoxColor</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="create_desc_circle">
+        <item name="android:textColor">@color/editTextBoxColor</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="textin_createcircle">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="upload_textboxpost">
+        <item name="android:gravity">top</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:inputType">textMultiLine</item>
+        <item name="android:textColorHint">@color/startBottomTextColor</item>
+    </style>
+
+    <style name="linkpost">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColorHint">@color/startBottomTextColor</item>
+    </style>
+
+    <style name="blogpost_title">
+        <item name="android:textSize">18sp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColorHint">@color/blog_title_clr</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="account_settinglabel">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/editTextBoxColor</item>
+    </style>
+
+    <style name="account_settingeditbox">
+        <item name="android:textSize">14sp</item>
+        <item name="android:paddingTop">3sp</item>
+        <item name="android:paddingLeft">3sp</item>
+        <item name="android:paddingRight">3sp</item>
+        <item name="android:paddingBottom">3sp</item>
+        <item name="android:layout_marginTop">3sp</item>
+        <item name="android:background">@color/editTextBoxColor</item>
+    </style>
+
+    <style name="user_profileimage">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <style name="profile_anonymousimage">
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_width">33dp</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <style name="circle_profileimage">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:height">40dp</item>
+        <item name="android:width">40dp</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+
+    <style name="username_fontsetting_wall">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/username_fontclr</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_marginTop">2sp</item>
+    </style>
+
+    <style name="circlename_fontsetting_wall">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/username_fontclr</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_marginTop">2sp</item>
+    </style>
+
+    <style name="profilename_more">
+        <item name="android:textColor">@color/editTextBoxColor</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="more_hashtagname">
+        <item name="android:textColor">@color/editTextBoxColor</item>
+        <item name="android:layout_marginTop">3sp</item>
+    </style>
+
+    <style name="horizontal_line_distribute">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5sp</item>
+        <item name="android:layout_marginTop">5sp</item>
+        <item name="android:background">@color/editTextBoxColor</item>
+    </style>
+
+    <style name="account_settingtxtlabel">
+        <item name="android:textColor">@color/backgroundColorDefault</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="account_settingchangetxt">
+        <item name="android:textColor">@color/backgroundColorDefault</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="account_labeltxt">
+        <item name="android:layout_marginTop">7sp</item>
+        <item name="android:padding">10sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:background">@color/editTextBoxColor</item>
+    </style>
+
+    <style name="account_editaboutus">
+        <item name="android:background">@color/editTextBoxColor</item>
+    </style>
+
+    <style name="report_header">
+        <item name="android:textColor">@color/text_service_color</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="account_userfollower_profile">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <style name="account_userfollower_username">
+        <item name="android:layout_marginLeft">10sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="account_userfollower_tagname">
+        <item name="android:layout_marginLeft">10sp</item>
+        <item name="android:layout_marginTop">1sp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="wall_account_newsfeedheader_options">
+        <item name="android:textSize">20dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:text">&#8942;</item>
+    </style>
+</resources>

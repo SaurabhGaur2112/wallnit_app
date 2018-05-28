@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/followinglist_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="7sp"
+        >
+
+        <ImageView
+            android:id="@+id/following_profile"
+            style="@style/account_userfollower_profile"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/following_username"
+                style="@style/account_userfollower_username"
+                />
+
+            <TextView
+                android:id="@+id/following_tagname"
+                style="@style/account_userfollower_tagname"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

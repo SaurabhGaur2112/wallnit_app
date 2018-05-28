@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/backgroundColorDefault"
+    tools:context="com.wallnit.wallnitlogin.WallnitCircleProfile">
+
+    <!-- background image start -->
+
+    <ImageView
+        android:id="@+id/circleprofile_backgroundimage_set"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:scaleType="centerCrop"
+        android:layout_alignParentTop="true"
+        android:visibility="gone"
+        />
+
+    <!-- background image end -->
+
+    <!-- background image gif start -->
+
+    <WebView
+        android:id="@+id/circleprofile_backgroundimage_gif_set"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:visibility="gone"
+        ></WebView>
+
+    <!-- background image gif end -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/circleprofile_include_header_layout"
+            layout="@layout/activity_wallnit_circle_header_options" />
+
+        <ScrollView
+            android:id="@+id/scrollCircle_post"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/circleprofile_include_header_layout"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <!-- circle profile detail start -->
+                <LinearLayout
+                    android:id="@+id/layoutfirst_setcircle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#99000000"
+                    android:padding="5dp"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="10dp"
+                    >
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/circleprofile_image"
+                        android:layout_gravity="center"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        app:civ_border_width="1sp"
+                        app:civ_border_color="@color/editTextBoxColor"
+                        android:visibility="gone"
+                        />
+
+                    <FrameLayout
+                        android:id="@+id/circleprofile_framelayout"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:visibility="gone"
+                        >
+
+                        <WebView
+                            android:id="@+id/circleprofile_image_gif"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:scrollbars="none"
+                            android:visibility="gone"
+                            ></WebView>
+
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/circlename_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/editTextBoxColor"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Category : "
+                            android:textColor="@color/editTextBoxColor"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="10dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/categoryname_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/editTextBoxColor"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoutmember_get"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="10dp"
+                        >
+
+                        <TextView
+                            android:id="@+id/totalCircleMemberNumber"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/editTextBoxColor"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Members"
+                            android:textColor="@color/editTextBoxColor"
+                            android:layout_marginLeft="10dp"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginLeft="10dp"
+                        >
+
+                        <TextView
+                            android:id="@+id/circle_emailid_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/editTextBoxColor"
+                            android:visibility="gone"
+                            />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/circledescription_abouttxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/editTextBoxColor"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_gravity="center"
+                        android:visibility="gone"
+                        />
+
+                </LinearLayout>
+
+
+                <!-- circle profile detail end -->
+
+               <Button
+                   android:id="@+id/circle_postsee_btnown"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="see post"
+                   android:layout_gravity="center_horizontal"
+                   />
+
+
+            </LinearLayout>
+
+        </ScrollView>
+    </RelativeLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_circle_blogupload_option"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:elevation="6dp"
+        app:pressedTranslationZ="12dp"
+        android:layout_margin="16dp"
+        app:backgroundTint="@color/editTextBoxColor"
+        android:src="@drawable/fab_icon_uploadblog"
+        android:scaleType="center"
+        android:visibility="gone"
+        />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_circle_photosupload_option"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:elevation="6dp"
+        app:pressedTranslationZ="12dp"
+        android:layout_margin="16dp"
+        app:backgroundTint="@color/editTextBoxColor"
+        android:src="@drawable/fab_icon_uploadphotos"
+        android:scaleType="center"
+        android:visibility="gone"
+        />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_circle_quoteupload_option"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:elevation="6dp"
+        app:pressedTranslationZ="12dp"
+        android:layout_margin="16dp"
+        app:backgroundTint="@color/editTextBoxColor"
+        android:src="@drawable/fab_icon_uploadtext"
+        android:scaleType="center"
+        android:visibility="gone"
+        />
+</android.support.design.widget.CoordinatorLayout>

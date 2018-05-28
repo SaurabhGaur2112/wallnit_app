@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/backgroundColorDefault"
+    tools:context="com.wallnit.wallnitlogin.WallnitCircleAccountVerification">
+
+    <TextView
+        android:id="@+id/circleaccount_verification_stepsecond"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nexttxt"
+        style="@style/signup_title_styles"
+        />
+
+    <ImageView
+        android:id="@+id/wallnit_icon_verification_circle"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/wallnit_icon"
+        android:layout_below="@id/circleaccount_verification_stepsecond"
+        />
+
+    <TextView
+        android:id="@+id/account_verification_title_circle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/account_verifi"
+        android:layout_below="@id/wallnit_icon_verification_circle"
+        style="@style/forget_password_title"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:id="@+id/account_verification_description_circle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/account_verifi_desc"
+        android:layout_below="@id/account_verification_title_circle"
+        style="@style/forget_password_title"
+        android:layout_marginTop="5sp"
+        />
+
+    <TextView
+        android:id="@+id/account_code_number_circle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/account_verification_description_circle"
+        style="@style/forget_password_description"
+        android:layout_marginTop="5sp"
+        />
+
+    <EditText
+        android:id="@+id/code_enter_confirm_circle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/account_code_number_circle"
+        android:layout_marginTop="5sp"
+        android:hint="@string/forget_password_step_second"
+        style="@style/account_codeverifi"
+        android:singleLine="true"
+        android:inputType="number"
+        />
+
+    <EditText
+        android:id="@+id/codeenter_checkverifi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/code_enter_confirm_circle"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/accountsetting_activity_layout"
+    android:background="@color/startBottomTextColor"
+    android:orientation="vertical"
+    tools:context="com.wallnit.wallnitlogin.WallnitUserAccountSetting">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+          <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/account_setting_info"
+            style="@style/account_settingtxtlabel"
+            />
+
+        <TextView
+            android:id="@+id/accountinfoid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/account_labeltxt"
+            android:background="@drawable/rounded_corner"
+            />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/account_setting_generalinfo"
+                style="@style/account_settingtxtlabel"
+                android:layout_marginTop="15sp"
+                />
+
+            <TextView
+                android:id="@+id/generalinfoid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/account_labeltxt"
+                android:background="@drawable/rounded_corner"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/account_setting_placeinfo_and_workinfo"
+                style="@style/account_settingtxtlabel"
+                android:layout_marginTop="15sp"
+                />
+
+            <TextView
+                android:id="@+id/workndplaceinfoid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/account_labeltxt"
+                android:background="@drawable/rounded_corner"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/account_setting_contact"
+                style="@style/account_settingtxtlabel"
+                android:layout_marginTop="15sp"
+                />
+
+            <TextView
+                android:id="@+id/contactinfoid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/account_labeltxt"
+                android:background="@drawable/rounded_corner"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/account_setting_aboutyou"
+                style="@style/account_settingtxtlabel"
+                android:layout_marginTop="15sp"
+                />
+
+            <TextView
+                android:id="@+id/aboutinfoid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/account_labeltxt"
+                android:background="@drawable/rounded_corner"
+                />
+
+            <TextView
+                android:id="@+id/changepasswordid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/account_setting_changepassword"
+                style="@style/account_settingchangetxt"
+                android:layout_marginTop="20sp"
+                />
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

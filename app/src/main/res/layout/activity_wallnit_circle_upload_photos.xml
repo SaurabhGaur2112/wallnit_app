@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="7sp"
+    tools:context="com.wallnit.wallnitlogin.WallnitCircleUploadPhotos">
+
+
+    <ImageView
+        android:id="@+id/circle_photos_gallery"
+        android:layout_width="50sp"
+        android:layout_height="30sp"
+        android:src="@drawable/ic_uploadgallery_icon"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        />
+
+    <ImageView
+        android:id="@+id/circle_photos_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_uploadcamera_icon"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/circle_photos_gallery"
+        android:layout_toEndOf="@+id/circle_photos_gallery"
+        android:layout_marginLeft="5sp"
+        />
+
+    <EditText
+        android:id="@+id/circle_upload_captionpost"
+        android:layout_width="match_parent"
+        android:layout_height="80sp"
+        android:hint="@string/upload_captiontext"
+        style="@style/upload_textboxpost"
+        android:layout_above="@id/circle_photos_camera"
+        />
+
+    <ImageView
+        android:id="@+id/circle_uploadphotos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/circle_upload_captionpost"
+        android:adjustViewBounds="true"
+        />
+
+    <EditText
+        android:id="@+id/image_which_one_circle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>
